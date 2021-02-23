@@ -1,0 +1,31 @@
+body{
+    width: 370px;
+    max-height: 400px;
+    overflow-y: scroll;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.signout{
+    background-color: #080F58;
+    padding: 10px;
+    color: white;
+    border-radius: 40px;
+    border: 0px;
+    font-weight: bold
+}
+.send{
+    background-color: #080F58;
+    padding: 10px;
+    color: white;
+    border-radius: 40px;
+    border: 0px;
+    font-weight: bold
+}
+
+.instructions ul{
+    list-style: none;
+}
+.instructions ul li{
+    padding: 8px
+}

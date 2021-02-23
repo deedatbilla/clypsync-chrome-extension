@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./css/login.css" />
+    
+  </head>
+  <body>
+    <div className="spinner"></div>
+    <div class="wrapper">
+      <div class="logo">
+        <img src="./assets/logo.png" width="70" />
+      </div>
+      <div class="form-header">
+        <h2>Welcome to ClypSync</h2>
+      </div>
+      <!-- <h5>Login into your account to start sharing your clipboard</h5> -->
+
+      <div class="form">
+       
+        <form>
+          <div
+          id="error"
+          style="display: none; padding: 1px; border-radius: 10px;border-radius: 15px; background-color: red; text-align: center;"
+          
+        >
+          <p style="color: white; font-weight: bolder;">Email or password incorrect</p>
+        </div>
+          <div class="form-input">
+            <input
+              required
+              id="email"
+              class="form-control"
+              type="email"
+              placeholder="Email"
+            />
+          </div>
+          <div class="form-input">
+            <input
+              required
+              class="form-control"
+              id="password"
+              type="password"
+              placeholder="Password"
+            />
+          </div>
+          <div class="button-layout">
+            <button class="login-button" id="login" type="submit">
+              Sign In
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./js/vendor/axios.js"></script>
+    <script src="./js/actions/loginAction.js"></script>
+  </body>
+</html>

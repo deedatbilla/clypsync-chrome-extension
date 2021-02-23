@@ -1,0 +1,55 @@
+.logo{
+    display: flex;
+    justify-content: center;
+}
+body{
+  width: 370px;
+}
+.wrapper{
+   margin: 0 auto;
+}
+.form-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+}
+#error{
+
+}
+.form{
+    display: flex;
+    justify-content: center;
+  
+
+}
+
+.form-control{
+    padding: 10px;
+    border-radius: 40px;
+    /* width: 90%; */
+    border: 1px solid gray;
+
+}
+.button-layout{
+    padding: 10px
+}
+
+.form-input{
+    margin: 10px;
+}
+.login-button{
+    width: 100%;
+    background-color: #080F58;
+    padding: 10px;
+    color: white;
+    border-radius: 40px;
+    border: 0px;
+    font-weight: bold
+
+}
+  #id{
+      background-color: red;
+      padding: 10px;
+  }

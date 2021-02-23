@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div style="padding: 20px">
+      <div style="display: flex; justify-content: space-between; padding: 10px">
+        <!-- top -->
+
+        <div style="display: flex">
+          <img src="./assets/logo.png" width="80" />
+        </div>
+
+        <div style="padding: 10px">
+          <h3 id="status">Connecting</h3>
+        </div>
+        <!-- top -->
+      </div>
+
+      <div style="padding: 5px">
+        <p>
+          A simple tool that allows you to share your clipboard with your pc and
+          Android phones
+        </p>
+      </div>
+      <div style="margin-top: 10px">
+        <button class="btn btn-primary btn-sm" id="signout">Sign out</button>
+      </div>
+
+      <div class="mt-2 instructions">
+        <h6>How to use</h6>
+        <p><b>From Phone : </b>Copy text to your clipboard and press send</p>
+
+        <p>
+          <b>From PC : </b>Paste text in the text area below to send text to
+          your phone
+        </p>
+      </div>
+      <div style="margin-top: 10px">
+        <form>
+          <div class="form-group">
+            <textarea id="text" cols="6" class="form-control"></textarea>
+          </div>
+          <div class="mt-2">
+            <button type="submit" id="send" class="btn btn-success btn-sm">
+              Send
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="mt-3">
+        <h6>Download the app on <a href="#">playstore</a></h6>
+        <h6>Find the extention on the <a href="#"> chrome web store</a></h6>
+      </div>
+
+      <div class="mt-3">
+        <address>
+          Developer contact <a href="mailto:deedat5@gmail.com">Deedat Idriss</a>.<br />
+          Location:<br />
+          Accra, Ghana
+        </address>
+      </div>
+    </div>
+    <script src="./js/vendor/axios.js"></script>
+    <script src="./js/vendor/socketIO.js"></script>
+    <script src="./js//actions/socketFunctions.js"></script>
+  </body>
+</html>
