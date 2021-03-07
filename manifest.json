@@ -1,28 +1,26 @@
 {
-    "name": "ClipSync",
-    "description": "Share clipboard beetween pc and android phone",
-    "version": "1.0",
+    "name": "ClypSync",
+    "description": "Share clipboard between pc and android phone",
+    "version": "1.0.1",
     
     "manifest_version": 2,
     "background": {
-      "page": "index.html",
+      "page": "background.html",
       "persistent": false
       },
       "permissions": ["storage","https://clypsync.herokuapp.com/","notifications","background"],
       "action": {
         "default_popup": "login.html",
         "default_icon": {
-            "16": "/assets/icon/48.png",
-            "32": "/assets/icon/48.png",
-            "48": "/assets/icon/48.png",
-            "128": "/assets/icon/78.png"
+            "16": "/assets/icon/logo.png",
+           
+            "128": "/assets/icon/logo2.png"
           }
       },
       "icons": {
-        "16": "/assets/icon/48.png",
-        "32": "/assets/icon/48.png",
-        "48": "/assets/icon/48.png",
-        "128": "/assets/icon/78.png"
+        "16": "/assets/icon/logo.png",
+      
+        "128": "/assets/icon/logo2.png"
        
         
       }

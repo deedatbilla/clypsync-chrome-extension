@@ -78,7 +78,7 @@ const connectToserver = (user) => {
         String(Math.random()),
         {
           type: "basic",
-          iconUrl: "./assets/logo.png",
+          iconUrl: "./assets/icon/logo2.png",
           title: "Clipboard from phone",
           message: `${receivedText} has been copied to your clipboard`,
         },
