@@ -10,7 +10,7 @@
       },
       "permissions": ["storage","https://clypsync.herokuapp.com/","notifications","background"],
       "action": {
-        "default_popup": "login.html",
+        "default_popup": "popup.html",
         "default_icon": {
             "16": "/assets/icon/logo.png",
            

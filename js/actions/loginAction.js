@@ -4,7 +4,7 @@ let errorView=document.getElementById("error");
 chrome.storage.sync.get("user", ({ user }) => {
   if (user) {
     chrome.action.setPopup({
-      popup: "./background.html",
+      popup: "./popup.html",
     });
   }
 });
@@ -28,7 +28,7 @@ login.addEventListener("click", async (e) => {
     //     popup:"./background.html"
     //  });
 
-    window.location.href = "./background.html";
+    window.location.href = "./popup.html";
   } catch (error) {
     console.log(error.message);
     login.disabled = false;
