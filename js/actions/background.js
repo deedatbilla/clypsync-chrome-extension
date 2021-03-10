@@ -25,6 +25,8 @@ const connectToserver = (user) => {
     console.log(clip);
     let receivedText = clip.length > 20 ? clip.substring(0, 20) + "..." : clip;
 
+    socket.emit("to_pc_success", { email: email });
+
     chrome.notifications.create(
       String(Math.random()),
       {
@@ -39,7 +41,7 @@ const connectToserver = (user) => {
     copyText.value = clip;
     copyText.select();
     document.execCommand("copy");
-      saveClip(user, clip);
+    saveClip(user, clip);
   });
 };
 
