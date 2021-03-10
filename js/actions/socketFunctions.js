@@ -26,7 +26,9 @@ signoutButton.addEventListener("click", async (e) => {
   chrome.storage.sync.get("user", ({ user }) => {
     Disconnect(user);
     deleteAuthToken(user);
+    // chrome.storage.sync.set({ user: {...user,email:"old email"} });
     chrome.storage.sync.remove("user");
+    chrome.extension.getBackgroundPage().window.location.reload() 
     window.location.href = "./login.html";
   });
 });
@@ -69,7 +71,7 @@ const connectToserver = (user) => {
     saveClip(user, clip);
 
     
-    
+    socket.emit("to_pc_success", { email: email });
     // document.getElementById("info").append("has been copied to your clipboard") ;
     navigator.clipboard.writeText(clip).then(async () => {
     

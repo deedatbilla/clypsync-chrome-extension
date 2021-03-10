@@ -1,13 +1,14 @@
 const host = "https://clypsync.herokuapp.com";
 var socket = io.connect(host);
-chrome.storage.sync.get("user", ({ user }) => {
-  if (!user) {
-    //   window.location.href = "./login.html";
-    Disconnect();
-    return;
-  }
-  connectToserver(user);
-});
+  chrome.storage.sync.get("user", ({ user }) => {
+    if (!user) {
+      //   window.location.href = "./login.html";
+      Disconnect();
+      return;
+    }
+    connectToserver(user);
+  });
+
 
 const connectToserver = (user) => {
   const { email } = user;

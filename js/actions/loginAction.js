@@ -23,7 +23,9 @@ login.addEventListener("click", async (e) => {
     login.disabled = false;
     login.innerHTML = "Sign In";
     console.log(response.data);
+    
     chrome.storage.sync.set({ user: response.data });
+    chrome.extension.getBackgroundPage().window.location.reload() 
     //   chrome.action.setPopup({
     //     popup:"./background.html"
     //  });

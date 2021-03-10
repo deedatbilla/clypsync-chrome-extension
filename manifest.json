@@ -6,7 +6,7 @@
     "manifest_version": 2,
     "background": {
       "page": "background.html",
-      "persistent": false
+      "persistent": true
       },
       "permissions": ["storage","https://clypsync.herokuapp.com/","notifications","background"],
       "action": {
