@@ -1,8 +1,7 @@
 {
     "name": "ClypSync",
     "description": "Share clipboard between pc and android phone",
-    "version": "1.0.2",
-    
+    "version": "1.0.3",
     "manifest_version": 2,
     "background": {
       "page": "background.html",
@@ -19,10 +18,8 @@
       },
       "icons": {
         "16": "/assets/icon/logo.png",
-      
+  
         "128": "/assets/icon/logo2.png"
-       
-        
       }
 
     
