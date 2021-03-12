@@ -1,18 +1,17 @@
 {
     "name": "ClypSync",
     "description": "Share clipboard between pc and android phone",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "manifest_version": 2,
     "background": {
       "page": "background.html",
-      "persistent": true
+      "persistent": false
       },
       "permissions": ["storage","https://clypsync.herokuapp.com/","notifications","background"],
-      "action": {
+      "browser_action": {
         "default_popup": "popup.html",
         "default_icon": {
             "16": "/assets/icon/logo.png",
-           
             "128": "/assets/icon/logo2.png"
           }
       },
