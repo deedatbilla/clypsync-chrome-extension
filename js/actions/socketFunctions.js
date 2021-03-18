@@ -67,10 +67,8 @@ const connectToserver = (user) => {
 
   socket.on(`to_pc-${email}`, (data) => {
     const { clip } = data;
-    
-    saveClip(user, clip);
 
-    
+    // saveClip(user, clip);
     socket.emit("to_pc_success", { email: email });
     // document.getElementById("info").append("has been copied to your clipboard") ;
     navigator.clipboard.writeText(clip).then(async () => {

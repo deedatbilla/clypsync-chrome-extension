@@ -25,6 +25,8 @@ login.addEventListener("click", async (e) => {
     console.log(response.data);
     
     chrome.storage.sync.set({ user: response.data });
+   
+    
     chrome.extension.getBackgroundPage().window.location.reload() 
     //   chrome.action.setPopup({
     //     popup:"./background.html"
